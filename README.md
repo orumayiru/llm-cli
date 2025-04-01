@@ -9,9 +9,9 @@ there are basic commands for selection and usage info. the program runs in termi
 There are only a small list of commands,
 
   ```llm-cli
-  /help # shows list of available commands\
+  /help # shows list of available commands
   
-  !{command} #will run the command in local terminal\
+  !{command} #will run the command in local terminal
   
   ```
 streaming text is not supported. since we are using glow only completed stdout is displayed.\
