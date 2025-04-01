@@ -1,0 +1,21 @@
+[package]
+name = "llm-chat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", optional = true, features = ["env-filter", "std"] }
+rustyline = { version = "14.0", features = ["derive"] }
+dirs = "5.0"
+# --- Added dependency ---
+dotenvy = "0.15" # For loading .env files (API key)
+
+[features]
+default = ["logging"]
+logging = ["tracing-subscriber"]
