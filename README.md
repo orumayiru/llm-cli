@@ -7,10 +7,10 @@ Currently supports
 4.huggingface(requires pro subscription for api inference)
 there are basic commands for selection and usage info. the program runs in terminal and used glow to render markdown in terminal. please install glow  before using the app.
 There are only a small list of commands,
-'''
-/help # shows list of available commands
-'''
-'''
-!{command} #will run the command in local terminal
-'''
+  '''
+  /help # shows list of available commands
+  '''
+  '''
+  !{command} #will run the command in local terminal
+  '''
 streaming text is not supported. since we are using glow only completed stdout is displayed.
